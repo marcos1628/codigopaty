@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para meu amor Patylla ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Flores animadas -->
+  <div class="falling-flowers"></div>
+
+  <div class="container">
+    <div class="column">
+      <div class="photo">
+        <img src="imagem1.jpg" alt="Imagem 1">
+        <div class="date">21/03/2025</div>
+        <div class="message">Nosso primeiro Natal juntos ❤️</div>
+      </div>
+
+      <div class="photo">
+        <img src="imagem2.jpg" alt="Imagem 2">
+        <div class="date">14/02/2025</div>
+        <div class="message">Ano novo, com você do lado 🙌</div>
+      </div>
+
+      <div class="photo">
+        <img src="imagem3.jpg" alt="Imagem 3">
+        <div class="date">25/12/2024</div>
+        <div class="message">Domingo simples, mas com amor 🌺</div>
+      </div>
+    </div>
+
+    <div class="center-text">
+      <h1>Te amo muito 💖</h1>
+      <p>Hoje é o nosso segundo Dia dos Namorados juntos. E eu só consigo pensar em como sou grato por ter você na minha vida.</p>
+      <p>Te amo imensamente, minha princesa, minha diva, minha rainha, minha estressadinha, minha esfomeada, meu dengo… você é tudo isso e muito mais. É minha paz nos dias difíceis, minha risada nos dias bons, meu abraço preferido quando o mundo pesa demais. Você é minha inspiração diária para levantar da cama, trabalhar, lutar e construir um futuro.</p>
+      <p>Estamos completando 1 ano e 3 meses de história. E que história linda estamos escrevendo juntos…</p>
+      <p>Começamos com pouco, quase nada material, mas com muito amor. Vivemos em uma casa onde não havia nem fogão, passamos por momentos de aperto, incertezas, e até um teto nos faltou por um tempo — e nem sua mãe sabe disso. Dormíamos em um quartinho tão pequeno que bastava um passo para alcançar a cama. E hoje, graças à nossa união e esforço, dormimos em um quarto enorme, em paz, sonhando juntos.</p>
+      <p>Cada dificuldade foi uma lição. Cada conquista, um passo firme no caminho que escolhemos trilhar lado a lado. Crescemos tanto nesse tempo… conquistamos um carro, temos um terreno — nosso futuro lar — e, mais importante que tudo isso: construímos uma vida juntos, tijolinho por tijolinho, com muito amor, cumplicidade, parceria e fé.</p>
+      <p>Eu não poderia desejar uma companheira melhor. Você me completa, me entende como ninguém, me fortalece mesmo quando não percebe, e faz tudo valer a pena só com um sorriso.</p>
+      <p>Meu amor, quero envelhecer ao seu lado. Quero comemorar o nosso 10º, 20º, 50º Dia dos Namorados, e quando estivermos lá, com 90 anos, sentados juntinhos no sofá da nossa casa, quero olhar para o lado e ainda ver você comigo. E sorrir quando você me olhar e disser: <strong>"Tô com fome."</strong></p>
+      <p>Porque até nisso você é perfeita — até nas manias que só eu entendo e amo. Obrigado por cada momento, por cada luta enfrentada juntos, por cada conquista que dividimos, por cada abraço que me salvou. Eu te amo mais do que as palavras podem expressar. E sigo te amando, todos os dias, com mais força, com mais certeza.</p>
+      <p><strong>Feliz Dia dos Namorados, minha eterna companheira.</strong></p>
+      <p>Com todo o meu amor,<br>Marcos Ferreira</p>
+    </div>
+
+    <div class="column">
+      <div class="photo">
+        <img src="imagem4.JPG" alt="Imagem 4">
+        <div class="date">22/03/2025</div>
+        <div class="message">Nosso Dia dos Namorados mais especial 💘</div>
+      </div>
+
+      <div class="photo">
+        <img src="imagem5.jpg" alt="Imagem 5">
+        <div class="date">25/12/2024 - 22/03/2025</div>
+        <div class="message">Tarde de risadas e abraços 🤗</div>
+      </div>
+
+      <div class="photo">
+        <video class="video" controls>
+          <source src="video6.mp4" type="video/mp4">
+        </video>
+        <div class="date">01/12/2024</div>
+        <div class="message">Um vídeo só pra você 🎥 💞</div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const container = document.querySelector('.falling-flowers');
+  const emojis = ['🌸','🌹','💐','🌺','🌷','🌼'];
+  const total = 30;
+
+  for (let i = 0; i < total; i++) {
+    const flower = document.createElement('span');
+    flower.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+    flower.style.left = Math.random() * 100 + 'vw';
+    flower.style.animationDuration = 5 + Math.random() * 5 + 's'; // 5s to 10s
+    flower.style.fontSize = 18 + Math.random() * 24 + 'px'; // 18px to 42px
+    flower.style.animationDelay = Math.random() * 5 + 's';
+
+    container.appendChild(flower);
+  }
+</script>
+
+</body>
+</html>
